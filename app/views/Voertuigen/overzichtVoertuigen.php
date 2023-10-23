@@ -21,7 +21,7 @@
             <th>Rijbewijs</th>
             <th>Instructeur</th>
         </thead>
-        <tbody>
+        <tbody> 
             <?= $data['rows'] ?>
         </tbody>
     </table>
