@@ -46,7 +46,6 @@ class Instructeur extends BaseController
 
         $this->view('Instructeur/overzichtinstructeur', $data);
     }
-
     public function overzichtVoertuigen($Id, $Message = null)
     {
         $result = $this->instructeurModel->getInstructeurs();
@@ -55,7 +54,6 @@ class Instructeur extends BaseController
                 $instructeur = $person;
             }
         }
-
         $result = $this->instructeurModel->getToegewezenVoertuigen($Id);
         if ($result != null) {
             $tableRows = "";
