@@ -8,7 +8,6 @@
 <title>Home screen</title>
 </head>
 
-
 <body>
     <h3><?= $data['title']; ?></h3>
         <a class="button" href="<?= URLROOT; ?>/Instructeur/overzichtinstructeur">Instructeurs in dienst</a> 
