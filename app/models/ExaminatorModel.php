@@ -23,7 +23,7 @@ class ExaminatorModel
         return $this->db->resultSet();
     }
 
-    public function getAllExamData() // alle data waar examinator en examen in zelfde row in externe tabel staan
+    public function getAllExamData()
     {
         $sql = "SELECT EXAM.Id
                        ,EXNA.Voornaam

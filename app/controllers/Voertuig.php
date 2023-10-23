@@ -59,7 +59,6 @@ class Voertuig extends BaseController
                         <td>$deleteEl</td>
                       </tr>";
         }
-
         $data = [
             'title' => 'Alle voertuigen',
             'rows' => $rows,

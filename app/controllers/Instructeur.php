@@ -13,15 +13,13 @@ class Instructeur extends BaseController
     {
         $result = $this->instructeurModel->getInstructeurs();
 
-        //  var_dump($result);
-
         $rows = "";
         $amount = 0;
         foreach ($result as $instructeur) {
             $date = date_create($instructeur->DatumInDienst);
             $formattedDate = date_format($date, "d-m-Y");
             $amount++;
-            $rows .= "<tr>
+              $rows .= "<tr>
                         <td>$instructeur->Voornaam</td>
                         <td>$instructeur->Tussenvoegsel</td>
                         <td>$instructeur->Achternaam</td>
