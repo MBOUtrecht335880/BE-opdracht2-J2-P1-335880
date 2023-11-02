@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h3><?= $data['title']; ?></h3>
+    <h1><?= $data['title']; ?></h1>
         <a class="button" href="<?= URLROOT; ?>/Instructeur/overzichtinstructeur">Instructeurs in dienst</a> 
         <a class="button" href="<?= URLROOT; ?>/Examens/overzichtexamens">Examinatoren in dienst</a> 
         <a class="button" href="<?= URLROOT; ?>/Voertuig/overzichtVoertuigen">Alle voertuigen</a> 

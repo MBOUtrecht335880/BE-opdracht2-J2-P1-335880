@@ -12,7 +12,7 @@
 
 <body>
     <div class="column center w-12 h-12">
-        <u><?= $data['title']; ?></u>
+        <h1><?= $data['title']; ?></h1>
         <p>Aantal instructeurs <?= $data['amount'] ?></p>
         <table>
             <thead>

@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
-<link rel="stylesheet" href="<?= URLROOT; ?>/css/style.css">
-<title>Overzicht Instructeurs</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+    <link rel="stylesheet" href="<?= URLROOT; ?>/css/style.css">
+    <title>Overzicht Instructeurs</title>
 </head>
 
-<body class="w-12 h12">
-    <div class="center column w-12 h12">
-        <u><?= $data['title']; ?></u>
+<body>
+    <div>
+        <h1><?= $data['title']; ?></h1>
         <p>
             Naam: <?= $data['personData']->Voornaam . " " . $data['personData']->Tussenvoegsel . " " . $data['personData']->Achternaam ?> <br>
             Datum in dienst: <?= $data['personData']->DatumInDienst; ?> <br>
@@ -41,4 +41,5 @@
     </div>
     <a href="<?= URLROOT . "/instructeur/overzichtInstructeur" ?>" class="button back">Back</a>
 </body>
+
 </html>

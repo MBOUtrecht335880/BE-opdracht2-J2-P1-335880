@@ -17,7 +17,7 @@
         header(URLROOT . "/instructeur/overzichtVoertuigen/");
     }
     ?>
-    <u><?= $data['title']; ?></u>
+    <h1><?= $data['title']; ?></h1>
     <a href="<?= URLROOT . "/instructeur/overzichtVoertuigen/" . $data['personData']->Id ?>" class="button back">Back</a>
     <p>
         Naam: <?= $data['personData']->Voornaam . " " . $data['personData']->Tussenvoegsel . " " . $data['personData']->Achternaam ?> <br>
