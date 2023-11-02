@@ -9,7 +9,7 @@
 <title>Overzicht voertuigen</title>
 </head>
 <body>
-    <u><?= $data['title']; ?></u>
+    <h1><?= $data['title']; ?></h1>
     <a href="<?= URLROOT . "/Homepage" ?>" class="button">Back</a>
     <table>
         <thead>
@@ -20,6 +20,8 @@
             <th>Brandstof</th>
             <th>Rijbewijs</th>
             <th>Instructeur</th>
+            <th>Naam</th>
+            <th>Verwijder</th>
         </thead>
         <tbody> 
             <?= $data['rows'] ?>
