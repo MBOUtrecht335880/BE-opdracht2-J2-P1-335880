@@ -11,7 +11,6 @@
 </head>
 
 <body class="w-12 h12">
-    <a href="<?= URLROOT . "/instructeur/overzichtInstructeur" ?>" class="button back">Back</a>
     <div class="center column w-12 h12">
         <u><?= $data['title']; ?></u>
         <p>
@@ -40,5 +39,6 @@
             </tbody>
         </table>
     </div>
+    <a href="<?= URLROOT . "/instructeur/overzichtInstructeur" ?>" class="button back">Back</a>
 </body>
 </html>
