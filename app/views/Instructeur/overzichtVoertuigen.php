@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
     <link rel="stylesheet" href="<?= URLROOT; ?>/css/style.css">
-    <title>Overzicht Instructeurs</title>
+    <title>Overzicht instructeur</title>
 </head>
 
 <body>
@@ -18,9 +18,9 @@
             Datum in dienst: <?= $data['personData']->DatumInDienst; ?> <br>
             Aantal sterren: <?= $data['personData']->AantalSterren ?>
         </p>
-        <div class="row">
-            <p class="center message"><?= $data['message'] ?></p>
-            <a class="button" href="<?= URLROOT . '/instructeur/beschikbarenVoertuigen/' . $data['personData']->Id ?>">Voeg voertuig toe</a>
+        <div>
+            <p><?= $data['message'] ?></p>
+            <a href="<?= URLROOT . '/instructeur/beschikbarenVoertuigen/' . $data['personData']->Id ?>">Voeg voertuig toe</a>
         </div>
 
         <table>
@@ -39,7 +39,7 @@
             </tbody>
         </table>
     </div>
-    <a href="<?= URLROOT . "/instructeur/overzichtInstructeur" ?>" class="button back">Back</a>
+    <a href="<?= URLROOT . "/instructeur/overzichtInstructeur" ?>">Back</a>
 </body>
 
 </html>
