@@ -9,10 +9,10 @@
 <title>Overzicht voertuigen</title>
 </head>
 <body>
-    <u><?= $data['title']; ?></u>
-    <a href="<?= URLROOT . "/Homepage" ?>" class="button">Back</a>
+    <h1><?= $data['title']; ?></h1>
     <form method="post">
     </form>
+    <a href="<?= URLROOT . "/Homepage" ?>" class="button">Back</a>
 </body>
 </html>
 
