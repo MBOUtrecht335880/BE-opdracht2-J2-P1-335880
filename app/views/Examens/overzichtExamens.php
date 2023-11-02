@@ -9,8 +9,8 @@
 <title>Overzicht Examens</title>
 </head>
 <body>
-        <p>Aantal examens <?= $data['amount'] ?></p>
-
+    <h1><?= $data['title']; ?></h1>
+    <p>Aantal examens <?= $data['amount'] ?></p>
     <table>
         <thead>
             <th>Naam examinator</th>
@@ -25,7 +25,6 @@
          </tbody>
     </table>
     <a href="<?= URLROOT . "/Homepage/" ?>" class="button">Back</a><br>
-          <u><?= $data['title']; ?></u>
 </body>
 </html>
 
